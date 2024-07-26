@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+    box-sizing: border-box;
+}
+
+.text-area {
+    width: 100%;
+    height: 500px; /* Mismo alto para ambos textareas */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+    color:#007bff;
+}
+
+
+#inputText {
+    flex: 1; /* Ocupa todo el espacio disponible en su contenedor */
+    max-width: 500px; /* Máximo ancho para el área de entrada */
+
+}
+.text-area::placeholder {
+    color: #999;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width:200px;
+    margin-top: 10px;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button img {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+}
+
+.copy-button {
+    background-color: #28a745; /* Verde para el botón Copiar */
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.copy-button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .text-area, .button-container, .result-container {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encriptador/Desencriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Encriptador/Desencriptador de Texto</h1>
+    <div class="container">
+        <textarea id="inputText" class="text-area" placeholder="Escribe tu texto aquí..."></textarea>
+        <div class="button-container">
+            <button onclick="encryptText()">
+             
+                Encriptar
+            </button>
+            <button onclick="decryptText()">
+                
+                Desencriptar
+            </button>
+            <img id="additionalImage" src="Frame 6.png" alt="Imagen adicional">
+        </div>
+        <div class="result-container">
+            <textarea id="outputText" class="text-area" placeholder="Resultado..."></textarea>
+            <button onclick="copyToClipboard()" class="copy-button">
+                Copiar
+            </button>
+        </div>
+    </div>
+    <script src="texto.js"></script>
+</body>
+</html>
